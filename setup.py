@@ -10,6 +10,7 @@ setup(
     license='MIT',
     author='Uğur Çayoğlu',
     author_email='urcyglu@gmail.com',
+    description='A thin wrapper around matplotlib, which lets you reuse settings.',
     url='https://github.com/OnionNinja/justplot',
     install_requires=[
         'matplotlib',
