@@ -1,11 +1,19 @@
-#!/usr/bin/python
+#!/usr/bin/python3.4
 # -*- encoding: utf-8 -*-
 
 from distutils.core import setup
+import os
+
+long_description = 'A thin wrapper around matplotlib, \\
+        which lets you save figure and axes settings for reuse.'
+
+if os.path.exists('README.rst'):
+    long_description = open('README.rst').read()
+
 
 setup(
     name='justplot',
-    version='0.1.2a5',
+    version='0.1.2a6',
     packages=['justplot',],
     license='MIT',
     author='Uğur Çayoğlu',
@@ -26,6 +34,7 @@ setup(
         'Programming Language :: Python :: 3 :: Only',
       ],
     keywords=['plots','matplotlib','wrapper'],
+    long_description = long_description,
     include_package_data=True,
 )
 
