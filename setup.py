@@ -4,8 +4,7 @@
 from distutils.core import setup
 import os
 
-long_description = 'A thin wrapper around matplotlib, \\
-        which lets you save figure and axes settings for reuse.'
+long_description = 'A thin wrapper around matplotlib, which lets you save figure and axes settings for reuse.'
 
 if os.path.exists('README.rst'):
     long_description = open('README.rst').read()
@@ -13,7 +12,7 @@ if os.path.exists('README.rst'):
 
 setup(
     name='justplot',
-    version='0.1.2a6',
+    version='0.1.3a1',
     packages=['justplot',],
     license='MIT',
     author='Uğur Çayoğlu',

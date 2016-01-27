@@ -143,7 +143,8 @@ class JustPlot(object):
     
     def _redraw(self):
         if plt.isinteractive():
-            fig = self.kwargs['fig']
+            fig = self.kwargs.get('fig',False)
+            if not fig: return
             if not plt.fignum_exists(fig.number):
                 fig.show()
             fig.canvas.draw()
