@@ -69,7 +69,7 @@ class JustPlot(object):
         self.zlayer_kwargs = []
         self.kwargs['fig'] = None
         self.kwargs['ax'] = None
-        if hard: self.kwargs = self._defaults.copy()
+        if hard: self.kwargs = self.kwarg_defaults.copy()
 
     def copy(self):
         new = self.__class__.__new__(self.__class__)
