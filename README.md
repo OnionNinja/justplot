@@ -74,7 +74,7 @@ blueprint.add_contourf(xlat,xlon,temp[0,:,:],label="Temperature [K]")
 
 ## How to improve the module (aka **our** todo list)
 
-- [] Save settings from y axes
-- [] Restructure
-- [] Write import function from preconfigured or used figures/axes
+- [ ] Save settings from y axes
+- [ ] Restructure
+- [ ] Write import function from preconfigured or used figures/axes
 - [x] Write README.md
