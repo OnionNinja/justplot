@@ -12,9 +12,10 @@ if os.path.exists('README.rst'):
 
 setup(
     name='justplot',
-    version='0.1.2a10',
+    version='0.1.2a11',
     packages=['justplot',],
     license='MIT',
+    platforms='Linux',
     author='Uğur Çayoğlu',
     author_email='urcyglu@gmail.com',
     description='A thin wrapper around matplotlib, which lets you reuse settings.',
