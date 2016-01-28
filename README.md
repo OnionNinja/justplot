@@ -77,6 +77,7 @@ blueprint.save('blueprint-1.png','png')
 
 This plot looks like the following:
 ![First plot](example/blueprint-1.png)
+
 The title is strange and too small. Additionally the both Axes could use some
 more ticks. So let's change that.
 ```python
@@ -116,7 +117,7 @@ blueprint.save("both.png","png")
 ```
 ![Both plots](example/both.png)
 
-You can find the example code and data in the [example](examples) folder.
+You can find the example code and data in the [example](example) folder.
 
 
 ## How to improve the module (aka **our** todo list)
