@@ -12,7 +12,7 @@ if os.path.exists('README.rst'):
 
 setup(
     name='justplot',
-    version='0.1.3a1',
+    version='0.1.2a10',
     packages=['justplot',],
     license='MIT',
     author='Uğur Çayoğlu',
