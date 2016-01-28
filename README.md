@@ -50,11 +50,11 @@ import xarray
 data = xarray.open_dataset('sresa1b_ncar_ccsm3-example.nc', decode_times=False) #pretty cryptic, I know
 lat = data.lat.data
 lon = data.lon.data
-temp = data.tas.data
+temp = data.tas.data[0,:,:]
 wind = data.ua.data
 xlat,xlon = np.meshgrid(lat,lon)
 ```
-Now we will create a plot which will be reusing for other plots:
+Now we will create a plot which we will be reusing for other plots:
 ```python
 from justplot import justplot as jp
 
@@ -67,7 +67,7 @@ blueprint = jp.JustPlot(
 ```
 Now we can actually build the plot:
 ```python
-blueprint.add_contourf(xlat,xlon,temp[0,:,:],label="Temperature [K]")
+blueprint.add_contourf(xlat,xlon,temp,label="Temperature [K]")
 ```
 
 
