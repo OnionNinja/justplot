@@ -12,7 +12,7 @@ else:
 
 setup(
     name='justplot',
-    version='0.1.3a2',
+    version='0.1.3a3',
     packages=['justplot',],
     license='MIT',
     platforms='Linux',
