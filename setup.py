@@ -4,21 +4,21 @@
 from distutils.core import setup
 import os
 
-long_description = 'A thin wrapper around matplotlib, which lets you save figure and axes settings for reuse.'
-
 if os.path.exists('README.rst'):
     long_description = open('README.rst').read()
+else:
+    long_description = ""
 
 
 setup(
     name='justplot',
-    version='0.1.3a1',
+    version='0.1.3a2',
     packages=['justplot',],
     license='MIT',
     platforms='Linux',
     author='Uğur Çayoğlu',
     author_email='urcyglu@gmail.com',
-    description='A thin wrapper around matplotlib, which lets you reuse settings.',
+    description='A thin wrapper around matplotlib, which lets you save figure and axes settings.',
     url='https://github.com/OnionNinja/justplot',
     download_url='https://github.com/onionninja/justplot/tarball/v0.1.2',
     install_requires=[

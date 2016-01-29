@@ -76,7 +76,7 @@ blueprint.save('blueprint-1.png','png')
 ```
 
 This plot looks like the following:
-![First plot](example/blueprint-1.png)
+![First plot](https://raw.githubusercontent.com/OnionNinja/justplot/master/example/blueprint-1.png)
 
 The title is strange and too small. Additionally the both Axes could use some
 more ticks. So let's change that.
@@ -94,7 +94,7 @@ blueprint.save("blueprint-2.png",'png')
 **our** to do list. You can quote me on that.
 
 Our plot looks now like this:
-![Second plot](example/blueprint-2.png)
+![Second plot](https://raw.githubusercontent.com/OnionNinja/justplot/master/example/blueprint-2.png)
 
 Good enough. Now pretend that you like this plot sooo much that you want all
 your future plots to look like it. For example the one for Wind. Let's do that.
@@ -105,7 +105,7 @@ windy.add_contour(xlat,xlon,wind,label="Wind")
 windy.save("windy.png","png")
 ```
 This looks like...
-![Wind plot](example/windy.png)
+![Wind plot](https://raw.githubusercontent.com/OnionNinja/justplot/master/example/windy.png)
 
 Let's put all this together.
 ```python
@@ -115,7 +115,7 @@ both.add_contourf(xlat,xlon,temp,label="Temperature")
 both.add_contour(xlat,xlon,wind,label="Wind",colors=('k'))
 blueprint.save("both.png","png")
 ```
-![Both plots](example/both.png)
+![Both plots](https://raw.githubusercontent.com/OnionNinja/justplot/master/example/both.png)
 
 You can find the example code and data in the [example](example) folder.
 
